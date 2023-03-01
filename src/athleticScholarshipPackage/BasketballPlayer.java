@@ -9,7 +9,7 @@ public class BasketballPlayer extends Athlete {
     private int avgBlocksPerGame;
 
     public BasketballPlayer() {
-    }
+        }
 
     public BasketballPlayer(int rank, String sport, String firstName, String lastName,
                             String hometown, String phoneNumber, String playerPosition,
@@ -39,31 +39,35 @@ public class BasketballPlayer extends Athlete {
                 '}';
     }
 
-    public BasketballPlayer(int rank, String sport, String firstName,
-                            String lastName, String hometown, String phoneNumber,
-                            String playerPosition, double height, int weight,
-                            String highSchool, boolean signed, String college) {
-        super(rank, sport, firstName, lastName, hometown, phoneNumber,
-                playerPosition, height, weight, highSchool, signed, college);
-    }
+//    public BasketballPlayer(int rank, String sport, String firstName,
+//                            String lastName, String hometown, String phoneNumber,
+//                            String playerPosition, double height, int weight,
+//                            String highSchool, boolean signed, String college) {
+//        super(rank, sport, firstName, lastName, hometown, phoneNumber,
+//                playerPosition, height, weight, highSchool, signed, college);
+//    }
 
     @Override
     public void playerProfileCard() {
+
         super.playerProfileCard();
     }
 
     @Override
     public void fortyYardDash(double time) {
+
         super.fortyYardDash(time);
     }
 
     @Override
     public void squatMax(int weight) {
+
         super.squatMax(weight);
     }
 
     @Override
     public void benchMax(int weight) {
+
         super.benchMax(weight);
     }
 }

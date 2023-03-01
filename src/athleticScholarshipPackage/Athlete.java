@@ -119,4 +119,6 @@ public class Athlete {
             System.out.println(event + "Average Bench Press");
         }
     }
+
+
 }
