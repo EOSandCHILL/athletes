@@ -76,10 +76,10 @@ public class Athlete {
         } else {
             System.out.println("College: " + college);
         }
-        System.out.println("-----------------------");
     }
 
     public void fortyYardDash(double time) {
+        System.out.println("-----------------------");
         System.out.println("Player Performance Card");
         System.out.println("-----------------------");
         String event = "40-yard dash results: ";
@@ -120,5 +120,11 @@ public class Athlete {
         }
     }
 
+    public void stats(){
+        System.out.println("-----------------------");
+        System.out.println("Season Stats");
+        System.out.println("-----------------------");
+
+    }
 
 }

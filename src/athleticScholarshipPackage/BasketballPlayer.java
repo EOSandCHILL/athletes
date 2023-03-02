@@ -1,12 +1,11 @@
 package athleticScholarshipPackage;
 
 public class BasketballPlayer extends Athlete {
-    private int avgPointsPerGame;
-    private int avgAssistsPerGame;
-    private int avgOffensiveReboundsPerGame;
-    private int avgDefensiveReboundsPerGame;
-    private int avgStealsPerGame;
-    private int avgBlocksPerGame;
+    private int assistsPerGame;
+    private int offensiveReboundsPerGame;
+    private int defensiveReboundsPerGame;
+    private int stealsPerGame;
+    private int blocksPerGame;
 
     public BasketballPlayer() {
         }
@@ -14,42 +13,25 @@ public class BasketballPlayer extends Athlete {
     public BasketballPlayer(int rank, String sport, String firstName, String lastName,
                             String hometown, String phoneNumber, String playerPosition,
                             double height, int weight, String highSchool, boolean signed,
-                            String college, int avgPointsPerGame, int avgAssistsPerGame,
-                            int avgOffensiveReboundsPerGame, int avgDefensiveReboundsPerGame,
-                            int avgStealsPerGame, int avgBlocksPerGame) {
+                            String college) {
         super(rank, sport, firstName, lastName, hometown, phoneNumber, playerPosition,
                 height, weight, highSchool, signed, college);
-        this.avgPointsPerGame = avgPointsPerGame;
-        this.avgAssistsPerGame = avgAssistsPerGame;
-        this.avgOffensiveReboundsPerGame = avgOffensiveReboundsPerGame;
-        this.avgDefensiveReboundsPerGame = avgDefensiveReboundsPerGame;
-        this.avgStealsPerGame = avgStealsPerGame;
-        this.avgBlocksPerGame = avgBlocksPerGame;
+
     }
 
     @Override
     public String toString() {
         return "BasketballPlayer{" +
-                "avgPointsPerGame=" + avgPointsPerGame +
-                ", avgAssistsPerGame=" + avgAssistsPerGame +
-                ", avgOffensiveReboundsPerGame=" + avgOffensiveReboundsPerGame +
-                ", avgDefensiveReboundsPerGame=" + avgDefensiveReboundsPerGame +
-                ", avgStealsPerGame=" + avgStealsPerGame +
-                ", avgBlocksPerGame=" + avgBlocksPerGame +
+                ", assistsPerGame=" + assistsPerGame +
+                ", offensiveReboundsPerGame=" + offensiveReboundsPerGame +
+                ", defensiveReboundsPerGame=" + defensiveReboundsPerGame +
+                ", stealsPerGame=" + stealsPerGame +
+                ", blocksPerGame=" + blocksPerGame +
                 '}';
     }
 
-//    public BasketballPlayer(int rank, String sport, String firstName,
-//                            String lastName, String hometown, String phoneNumber,
-//                            String playerPosition, double height, int weight,
-//                            String highSchool, boolean signed, String college) {
-//        super(rank, sport, firstName, lastName, hometown, phoneNumber,
-//                playerPosition, height, weight, highSchool, signed, college);
-//    }
-
     @Override
     public void playerProfileCard() {
-
         super.playerProfileCard();
     }
 
@@ -70,4 +52,14 @@ public class BasketballPlayer extends Athlete {
 
         super.benchMax(weight);
     }
+    public void basketballStats(int assistsPerGame, int offensiveReboundsPerGame,
+                                int defensiveReboundsPerGame, int stealsPerGame,
+                                int blocksPerGame) {
+            stats();
+            System.out.println("Assists Per Game: " + assistsPerGame);
+            System.out.println("Offensive Rebounds Per Game: " + offensiveReboundsPerGame);
+            System.out.println("Defensive Rebounds Per Game: " + defensiveReboundsPerGame);
+            System.out.println("Steals Per Game: " + stealsPerGame);
+            System.out.println("Blocks Per Game: " + blocksPerGame);
+        }
 }
